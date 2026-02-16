@@ -19,4 +19,4 @@ const Map = ({ center = [48.885, 2.404], zoom = 15 }) => {
     );
 };
 
-export default Map;
+export default Map; 

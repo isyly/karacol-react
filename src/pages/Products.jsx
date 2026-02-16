@@ -1,4 +1,4 @@
-const Products = () => {    
+const Products = () => {
     return (
         <section className="products" id="products">
             <div className="container">
@@ -49,6 +49,50 @@ const Products = () => {
                             <p>Artistic designs</p>
                         </div>
                     </div>
+
+                    <div className="product-card">
+                        <div className="product-image">
+                            <img src="https://images.unsplash.com/photo-1636044399257-e820cc11ebaa?q=80&w=2340&auto=format&fit=crop&w=600&q=80"
+                                alt="Treehouse" />
+                            <div className="product-overlay">
+                                <span>View Details</span>
+                            </div>
+                        </div>
+                        <div className="product-info">
+                            <h3>Treehouses & Towers</h3>
+                            <p>Robinia wood structures</p>
+                        </div>
+                    </div>
+
+                    <div className="product-card">
+                        <div className="product-image">
+                            <img src="https://images.unsplash.com/photo-1767943211959-e30579f0bc4a?auto=format&fit=crop&w=600&q=80"
+                                alt="Slide" />
+                            <div className="product-overlay">
+                                <span>View Details</span>
+                            </div>
+                        </div>
+                        <div className="product-info">
+                            <h3>Slides & Swings</h3>
+                            <p>Natural adventure</p>
+                        </div>
+                    </div>
+
+                    <div className="product-card">
+                        <div className="product-image">
+                            <img src="https://images.unsplash.com/photo-1707013269128-0cdc68cb8d42?auto=format&fit=crop&w=600&q=80"
+                                alt="Climbing" />
+                            <div className="product-overlay">
+                                <span>View Details</span>
+                            </div>
+                        </div>
+                        <div className="product-info">
+                            <h3>Wood Structures
+                            </h3>
+                            <p>Artistic designs</p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>

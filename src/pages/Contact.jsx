@@ -7,7 +7,7 @@ const Contact = () => {
             <div className="container contact-wrapper">
                 <div className="contact-info ">
                     <h2>Get in <span>Touch</span></h2>
-                    <p>Do you have a project in mind? Let's build something great together.</p>
+                    <p>Do you have a idea in mind? Let's build something great together.</p>
 
                     <div className="info-item">
                         <strong>Address:</strong>

@@ -1,4 +1,5 @@
 
+import KaracolLogo from '../assets/Karacol-logo.png';
 
 const Footer = () => {
 	const currentYear = new Date().getFullYear();
@@ -6,7 +7,7 @@ const Footer = () => {
 		<footer className="main-footer">
 			<div className="container footer-grid">
 				<div className="footer-col">
-					<img src="src/assets/Karacol-logo.png" alt="karacol Logo" className="footer-logo" />
+					<img src={KaracolLogo} alt="karacol Logo" className="footer-logo" />
 					<p>
 						Creative playground design made of robinia wood.<br />
 						We bring nature back to play.

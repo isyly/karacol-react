@@ -1,5 +1,6 @@
 
 import { useRef, useEffect } from "react";
+import KaracolLogo from '../assets/Karacol-logo.png';
 
 const Header = () => {
     const menuToggleRef = useRef(null);
@@ -42,7 +43,7 @@ const Header = () => {
             <div className="container">
                 <div className="logo">
                     <a href="index.html">
-                        <img src="src/assets/karacol-logo.png" alt="Kara Logo" />
+                        <img src={KaracolLogo} alt="Kara Logo" />
                     </a>
                 </div>
 

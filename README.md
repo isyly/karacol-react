@@ -4,7 +4,7 @@
 Projet de site vitrine pour Karacol, réalisé avec React et Vite.
 
 ## Fonctionnalités principales
-- Navigation fluide avec ancrages
+- Navigation fluide
 - Carte interactive Leaflet sur la page Contact
 - Composants réutilisables (Header, Footer, Hero, Produits, etc.)
 - Responsive design

@@ -1,5 +1,5 @@
 
-import KaracolLogo from '../assets/Karacol-logo.png';
+import KaracolLogo from '../assets/klogo.png';
 
 const Footer = () => {
 	const currentYear = new Date().getFullYear();

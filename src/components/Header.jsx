@@ -1,6 +1,6 @@
 
 import { useRef, useEffect } from "react";
-import KaracolLogo from '../assets/Karacol-logo.png';
+import KaracolLogo from '../assets/klogo.png';
 
 const Header = () => {
     const menuToggleRef = useRef(null);

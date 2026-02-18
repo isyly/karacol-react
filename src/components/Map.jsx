@@ -1,7 +1,11 @@
+
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
+import { useTranslation } from 'react-i18next';
 
-const Map = ({ center = [48.885, 2.404], zoom = 15 }) => {
+
+const Map = ({ center = [48.885, 2.404], zoom = 8 }) => {
+    const { t } = useTranslation();
     return (
         <div style={{ height: '300px', width: '100%' }}>
             <MapContainer center={center} zoom={zoom} scrollWheelZoom={true} style={{ height: '100%', width: '100%' }}>
@@ -11,7 +15,8 @@ const Map = ({ center = [48.885, 2.404], zoom = 15 }) => {
                 />
                 <Marker position={center}>
                     <Popup>
-                        18, rue du 14 juillet<br />93310 Le Pré-Saint-Gervais
+                        {t('map.address', '18, rue du 14 juillet')}<br />
+                        {t('map.city', '93310 Le Pré-Saint-Gervais')}
                     </Popup>
                 </Marker>
             </MapContainer>

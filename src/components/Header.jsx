@@ -1,5 +1,6 @@
 
 import { useRef, useEffect } from "react";
+import { useTranslation } from 'react-i18next';
 import KaracolLogo from '../assets/klogo.png';
 
 const Header = () => {
@@ -38,6 +39,12 @@ const Header = () => {
         };
     }, []);
 
+    const { i18n } = useTranslation();
+    const currentLang = i18n.language;
+    const changeLanguage = (lng) => {
+        i18n.changeLanguage(lng);
+    };
+
     return (
         <header className="main-header">
             <div className="container">
@@ -49,10 +56,10 @@ const Header = () => {
 
                 <nav className="navigation" ref={navigationRef}>
                     <ul>
-                        <li><a href="#products">Products</a></li>
-                        <li><a href="#presentation">Individual Playgrounds</a></li>
-                        <li><a href="#">About us</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#products">{i18n.t('header.products')}</a></li>
+                        <li><a href="#presentation">{i18n.t('header.playgrounds')}</a></li>
+                        <li><a href="#">{i18n.t('header.about')}</a></li>
+                        <li><a href="#contact">{i18n.t('header.contact')}</a></li>
                     </ul>
                 </nav>
                 <button className="menu-toggle" aria-label="Open menu" ref={menuToggleRef}>
@@ -61,7 +68,19 @@ const Header = () => {
                     <span className="bar"></span>
                 </button>
                 <div className="header-utils">
-                    <a href="#" className="active">EN</a> | <a href="#">FR</a>
+                    <button
+                        onClick={() => changeLanguage('en')}
+                        className={currentLang === 'en' ? 'active' : ''}
+                        style={{ marginRight: 4, background: 'none', border: 'none', fontSize: 22, cursor: 'pointer' }}
+                        aria-label="English"
+                    >🇬🇧</button>
+                    |
+                    <button
+                        onClick={() => changeLanguage('fr')}
+                        className={currentLang === 'fr' ? 'active' : ''}
+                        style={{ marginLeft: 4, background: 'none', border: 'none', fontSize: 22, cursor: 'pointer' }}
+                        aria-label="Français"
+                    >🇫🇷</button>
                 </div>
             </div>
         </header>

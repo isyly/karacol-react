@@ -5,6 +5,15 @@ const Hero = () => {
     const { t } = useTranslation();
     return (
         <section className="hero">
+            <video
+                className="hero-bg-video"
+                autoPlay
+                loop
+                muted
+                playsInline
+                src="https://www.lappset.de/wp-content/uploads/2025/10/Prime-Landing-page-banner-video-compressed.mp4"
+                type="video/mp4"
+            />
             <div className="hero-overlay">
                 <div className="container">
                     <div className="hero-text">

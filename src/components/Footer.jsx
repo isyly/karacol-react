@@ -25,8 +25,8 @@ const Footer = () => {
 					<h4>{t('footer.quickLinks', 'Quick Links')}</h4>
 					<ul>
 						<li><a href="#">{t('footer.philosophy', 'Our Philosophy')}</a></li>
-						<li><a href="#">{t('footer.catalogues', 'Catalogues')}</a></li>
-						<li><a href="#">{t('footer.security', 'Security Standards')}</a></li>
+						<li><a href="https://www.richter-spielgeraete.de/en/catalogues/" target="_blank">{t('footer.catalogues', 'Catalogues')}</a></li>
+						<li><a href="https://www.richter-spielgeraete.de/en/legal/legal-notice/">{t('footer.security', 'Security Standards')}</a></li>
 						<li><a href="#">{t('footer.references', 'References')}</a></li>
 					</ul>
 				</div>
@@ -46,8 +46,8 @@ const Footer = () => {
 				<div className="container">
 					<p>&copy; {currentYear} Caracol - {t('footer.rights', 'Tous droits réservés.')}</p>
 					<div className="legal-links">
-						<a href="#">{t('footer.privacy', 'Privacy Policy')}</a>
-						<a href="#">{t('footer.imprint', 'Imprint')}</a>
+						<a href="https://www.richter-spielgeraete.de/en/legal/privacy-policy/" target="_blank">{t('footer.privacy', 'Privacy Policy')}</a>
+						<a href="https://www.richter-spielgeraete.de/en/legal/legal-notice/" target="_blank">{t('footer.imprint', 'Imprint')}</a>
 					</div>
 				</div>
 			</div>

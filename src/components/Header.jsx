@@ -58,7 +58,7 @@ const Header = () => {
                     <ul>
                         <li><a href="#products">{i18n.t('header.products')}</a></li>
                         <li><a href="#presentation">{i18n.t('header.playgrounds')}</a></li>
-                        <li><a href="#">{i18n.t('header.about')}</a></li>
+                        <li><a href="#about">{i18n.t('header.about')}</a></li>
                         <li><a href="#contact">{i18n.t('header.contact')}</a></li>
                     </ul>
                 </nav>

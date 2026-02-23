@@ -7,7 +7,7 @@ const Presentation = () => {
         <section className="presentation" id="presentation">
             <div className="container">
                 <div className="section-intro">
-                    <h2>{t('presentation.title', 'Why choose')} <span>Sik-Holz?</span></h2>
+                    <h2>{t('presentation.title', 'Why choose')} <span>Karacol?</span></h2>
                     <p>{t('presentation.intro', 'We combine nature, art, and safety in every playground structure.')}</p>
                 </div>
 

@@ -1,3 +1,170 @@
+/* --- Scroll To Top Button --- */
+.scroll-to-top {
+    position: fixed;
+    right: 32px;
+    bottom: 32px;
+    width: 48px;
+    height: 48px;
+    background: #719941;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1200;
+    transition: background 0.2s, box-shadow 0.2s;
+}
+.scroll-to-top:hover {
+    background: #5a7a34;
+    box-shadow: 0 6px 24px rgba(0,0,0,0.18);
+}
+@media (max-width: 600px) {
+    .scroll-to-top {
+        right: 12px;
+        bottom: 12px;
+        width: 40px;
+        height: 40px;
+    }
+}
+
+body{
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Chewy", system-ui;
+  font-optical-sizing: auto;
+
+  font-weight: 400;
+  font-style: normal;
+  font-display: ;
+}
+
+
+
+/* --- AboutUs Layout & Carousel --- */
+.aboutus-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;
+    min-height: 480px;
+}
+
+.aboutus-carousel {
+    position: relative;
+    width: 48vw;
+    min-width: 420px;
+    max-width: 700px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f7f7f7;
+    border-radius: 15px;
+    box-shadow: 0 4px 24px rgba(113,153,65,0.08);
+    overflow: hidden;
+}
+
+.carousel-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #719941;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 2;
+    opacity: 0.85;
+    transition: background 0.2s;
+}
+.carousel-btn.left {
+    left: 10px;
+}
+.carousel-btn.right {
+    right: 10px;
+}
+.carousel-btn:hover {
+    background: #5a7a34;
+}
+
+@media (max-width: 1100px) {
+    .aboutus-flex {
+        flex-direction: column;
+        gap: 24px;
+        width: 100%;
+        min-height: unset;
+    }
+    .aboutus-carousel {
+        width: 95vw;
+        max-width: 420px;
+        min-width: 220px;
+        height: 220px;
+    }
+}
+/* AboutUs section styles */
+/* --- AboutUs Section --- */
+.aboutus-section {
+    background: #fff;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.aboutus-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 30px;
+    background: #f7f7f7;
+    border-radius: 15px;
+    box-shadow: 0 4px 24px rgba(113,153,65,0.08);
+    border: 1px solid #eee;
+}
+
+.aboutus-container h2 {
+    font-size: 2.5rem;
+    color: #719941;
+    margin-bottom: 24px;
+    letter-spacing: 1px;
+}
+
+.aboutus-container p {
+    font-size: 1.18rem;
+    color: #333;
+    line-height: 1.8;
+    margin-bottom: 0;
+    white-space: pre-line;
+}
+
+@media (max-width: 768px) {
+    .aboutus-container {
+        padding: 24px 10px;
+    }
+    .aboutus-container h2 {
+        font-size: 1.5rem;
+    }
+    .aboutus-container p {
+        font-size: 1rem;
+    }
+}
 /* Décalage des ancres de navigation pour compenser le header */
 section[id] {
     scroll-margin-top: 60px;
@@ -31,7 +198,6 @@ section[id] {
 /* --- HEADER & NAV --- */
 .main-header {
     /* ajouter la police Love Ya Like A Sister */
-    font-family: "Love Ya Like A Sister", cursive;
     background-color: #ffffff;
     border-bottom: 1px solid #f2f2f2;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
@@ -50,7 +216,6 @@ section[id] {
     padding: 8px 0;
     font-size: 0.8rem;
     /* Plus petit que le menu */
-    font-family: "Love Ya Like A Sister", cursive;
     color: #ffffff;
     /* Texte en blanc pour contraster avec le rouge */
 }
@@ -119,7 +284,6 @@ section[id] {
     display: flex;
     align-items: center;
     color: white;
-    font-family: "Love Ya Like A Sister", cursive;
     overflow: hidden;
 }
 
@@ -208,7 +372,6 @@ section[id] {
 .presentation {
     padding: 80px 0;
     background-color: #fff;
-    font-family: "Love Ya Like A Sister", cursive;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -352,7 +515,6 @@ section[id] {
 .products {
     padding: 60px 0;
     background-color: #f4f4f4;
-    font-family: "Love Ya Like A Sister", cursive;
     text-align: center;
 
 }
@@ -467,7 +629,6 @@ section[id] {
     /* Un gris très foncé */
     color: #eeeeee;
     padding: 60px 0 0 0;
-    font-family: 'Prater', sans-serif;
 }
 
 .footer-grid {
@@ -569,7 +730,6 @@ textarea {
     padding: 12px;
     border: 2px solid #ddd;
     border-radius: 8px;
-    font-family: inherit;
     transition: all 0.3s ease;
 }
 

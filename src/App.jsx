@@ -9,7 +9,6 @@ import Contactus from "./routes/Contactus";
 import OurPlayscapes from "./routes/OurPlayscapes";
 import OurProducts from "./routes/OurProducts";
 import AboutUs from "./routes/AboutUs";
-import PageError from "./routes/PageError";
 import './App.css';
 
 function App() {
@@ -24,7 +23,6 @@ function App() {
         <Route path="/ourplayscapes" element={<OurPlayscapes />} />
         <Route path="/ourproducts" element={<OurProducts />} />
         <Route path="/aboutus" element={<AboutUs />} />
-        <Route path="*" element={<PageError />} />
       </Routes>
       <Footer />
     </>

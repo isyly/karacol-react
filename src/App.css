@@ -1,4 +1,66 @@
+/* --- style.css --- */
+
+h1,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.button {
+  border: 1px solid #000;
+  background: transparent;
+  margin: 5px 5px;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.button:hover {
+  box-shadow: 3px 3px 0px 0px rgba(0, 0, 0);
+}
+
+.items-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.item {
+  padding: 4px 10px;
+  min-width: 100px;
+  min-height: 50px;
+  margin: 4px 10px;
+  /* border: 1px solid #000;
+  border-radius: 5px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.category {
+  color: #64748b;
+  font-size: 10px;
+}
+
+.active {
+    text-underline-offset: inherit;
+  background-color: #a5f543 ;
+  opacity: 0.5;
+}
+
+
 /* --- Scroll To Top Button --- */
+
+
+
 .scroll-to-top {
     position: fixed;
     right: 32px;
@@ -8,7 +70,7 @@
     background: #719941;
     border: none;
     border-radius: 50%;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -16,10 +78,12 @@
     z-index: 1200;
     transition: background 0.2s, box-shadow 0.2s;
 }
+
 .scroll-to-top:hover {
     background: #5a7a34;
-    box-shadow: 0 6px 24px rgba(0,0,0,0.18);
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.18);
 }
+
 @media (max-width: 600px) {
     .scroll-to-top {
         right: 12px;
@@ -29,19 +93,25 @@
     }
 }
 
-body{
-  font-family: "Quicksand", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+body {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Chewy", system-ui;
-  font-optical-sizing: auto;
 
-  font-weight: 400;
-  font-style: normal;
-  font-display: ;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Chewy", system-ui;
+    font-optical-sizing: auto;
+
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
 }
 
 
@@ -69,7 +139,7 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: center;
     background: #f7f7f7;
     border-radius: 15px;
-    box-shadow: 0 4px 24px rgba(113,153,65,0.08);
+    box-shadow: 0 4px 24px rgba(113, 153, 65, 0.08);
     overflow: hidden;
 }
 
@@ -78,7 +148,7 @@ h1, h2, h3, h4, h5, h6 {
     height: 100%;
     object-fit: cover;
     border-radius: 12px;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
 }
 
 .carousel-btn {
@@ -97,12 +167,15 @@ h1, h2, h3, h4, h5, h6 {
     opacity: 0.85;
     transition: background 0.2s;
 }
+
 .carousel-btn.left {
     left: 10px;
 }
+
 .carousel-btn.right {
     right: 10px;
 }
+
 .carousel-btn:hover {
     background: #5a7a34;
 }
@@ -114,6 +187,7 @@ h1, h2, h3, h4, h5, h6 {
         width: 100%;
         min-height: unset;
     }
+
     .aboutus-carousel {
         width: 95vw;
         max-width: 420px;
@@ -121,6 +195,7 @@ h1, h2, h3, h4, h5, h6 {
         height: 220px;
     }
 }
+
 /* AboutUs section styles */
 /* --- AboutUs Section --- */
 .aboutus-section {
@@ -135,7 +210,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 40px 30px;
     background: #f7f7f7;
     border-radius: 15px;
-    box-shadow: 0 4px 24px rgba(113,153,65,0.08);
+    box-shadow: 0 4px 24px rgba(113, 153, 65, 0.08);
     border: 1px solid #eee;
 }
 
@@ -158,28 +233,34 @@ h1, h2, h3, h4, h5, h6 {
     .aboutus-container {
         padding: 24px 10px;
     }
+
     .aboutus-container h2 {
         font-size: 1.5rem;
     }
+
     .aboutus-container p {
         font-size: 1rem;
     }
 }
+
 /* Décalage des ancres de navigation pour compenser le header */
 section[id] {
     scroll-margin-top: 60px;
 }
+
 /* --- Reveal On Scroll Animation --- */
 .reveal-on-scroll {
     opacity: 0;
     transform: translateY(60px);
-    transition: opacity 1.8s cubic-bezier(0.4,0,0.2,1), transform 0.8s cubic-bezier(0.4,0,0.2,1);
+    transition: opacity 1.8s cubic-bezier(0.4, 0, 0.2, 1), transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
     will-change: opacity, transform;
 }
+
 .reveal-on-scroll--visible {
     opacity: 1;
     transform: none;
 }
+
 /* --- VARIABLES ET BASES --- */
 * {
     box-sizing: border-box;
@@ -196,7 +277,7 @@ section[id] {
 
 
 /* --- HEADER & NAV --- */
-.main-header {
+.main-navbar {
     /* ajouter la police Love Ya Like A Sister */
     background-color: #ffffff;
     border-bottom: 1px solid #f2f2f2;
@@ -242,7 +323,7 @@ section[id] {
     transition: color 0.2s;
 }
 
-.main-header .container {
+.main-navbar .container {
     display: flex;
     justify-content: space-between;
     /* Espace entre logo, nav et utils */
@@ -530,7 +611,7 @@ section[id] {
     margin-bottom: 15px;
 }
 
-.products .section-header span {
+.products .section-navbar span {
     color: #719941;
 }
 
@@ -687,7 +768,58 @@ section[id] {
     text-decoration: none;
 }
 
+/* --- cta  --- */
 
+.cta {
+    background-color: #719941;
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+    display: flex;
+    margin: 50px 0px;
+
+}
+
+.cta .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 60%;
+}
+
+.cta h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.cta .btn {
+    background-color: white;
+    color: #719941;
+    border: none;
+    font-family: "Chewy", system-ui;
+    padding: 12px 30px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    display: inline-block;
+    margin-right: 15px;
+    margin-top: 50px;
+}
+
+/* .cta .btn-primary {
+    background-color: white;
+    color: #719941;
+    border: none;
+    border-radius:20px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    z-index: 2;
+    opacity: 0.85;
+    padding: 12px 40px;
+      font-family: "Chewy", system-ui;
+  font-optical-sizing: auto;
+
+} */
 
 /* --- contact form  --- */
 .contact-page {
@@ -701,14 +833,18 @@ section[id] {
     flex-wrap: wrap;
 }
 
-.navigation .nav-active{
-color: #719941; /* Le vert Karacol */ font-weight: bolder; }  
+.navigation .nav-active {
+    color: #719941;
+    /* Le vert Karacol */
+    font-weight: bolder;
+}
 
 
 .contact-info,
 .contact-form {
     flex: 1;
     min-width: 300px;
+    z-index: 1;
 }
 
 .form-group {
@@ -767,11 +903,16 @@ textarea:focus {
     font-size: 0.9rem;
     color: #888;
 }
-.breadcrumb a { color: #719941; text-decoration: none; }
+
+.breadcrumb a {
+    color: #719941;
+    text-decoration: none;
+}
 
 /* Hero Catégorie */
 .category-hero {
-    background: #f0f4e8; /* Un vert très pâle */
+    background: #f0f4e8;
+    /* Un vert très pâle */
     padding: 60px 0;
     text-align: center;
     border-bottom: 2px solid #e2e8d5;
@@ -795,7 +936,7 @@ textarea:focus {
     flex: 1;
     min-width: 300px;
     border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 .product-desc {

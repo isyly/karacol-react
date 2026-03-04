@@ -2,7 +2,7 @@
 
 import KaracolLogo from '../assets/klogo.png';
 import { useTranslation } from 'react-i18next';
-
+import { LinkedInLogoIcon, GitHubLogoIcon, InstagramLogoIcon } from '@radix-ui/react-icons';
 
 const Footer = () => {
 	const { t } = useTranslation();
@@ -16,8 +16,8 @@ const Footer = () => {
 						{t('footer.slogan1', 'Creative playground design made of robinia wood.')}<br />
 						{t('footer.slogan2', 'We bring nature back to play.')}
 					</p>
-					<div className="social-icons">
-						<a href="#">FB</a> <a href="#">IG</a> <a href="#">YT</a>
+					<div className="social-icons" style={{ display: 'flex', gap: '1rem' }}>
+						<a href="#"><LinkedInLogoIcon width={30} height={30} /></a> <a href="#"><GitHubLogoIcon width={30} height={30} /></a> <a href="#"><InstagramLogoIcon width={30} height={30}	 /></a>
 					</div>
 				</div>
 

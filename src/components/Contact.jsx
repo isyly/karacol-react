@@ -1,5 +1,5 @@
 
-import Map from "../components/Map";
+import Map from "./Map";
 import { useTranslation } from 'react-i18next';
 
 
@@ -30,7 +30,7 @@ const Contact = () => {
                     </div>
                 </div>
 
-                <div className="contact-form">
+                <div className="contact-form" >
                     <form action="#">
                         <div className="form-group">
                             <label htmlFor="name">{t('contact.fullName', 'Full Name')}</label>

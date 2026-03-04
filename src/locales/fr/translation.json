@@ -1,19 +1,16 @@
 {
   "topbar.contact": "Contactez-nous par",
   "topbar.language": "ou par téléphone au",
-
-    "header.products": "Nos Produits",
-  "header.playgrounds": "Nos aires de jeux",
-  "header.about": "À propos",
-  "header.contact": "Contact",
-
+  "navbar.products": "Nos Produits",
+  "navbar.playgrounds": "Nos aires de jeux",
+  "navbar.about": "À propos",
+  "navbar.contact": "Contact",
+  "navbar.inspiration": "Inspiration",
   "hero.title1": "Équipements de jeux",
   "hero.title2": "en bois de robinier",
   "hero.subtitle": "Des espaces de jeux individuels, artistiques et naturels pour les enfants de tous âges.",
   "hero.products": "Nos Produits",
   "hero.inspiration": "Inspiration",
-
-
   "presentation.title": "Pourquoi choisir",
   "presentation.intro": "Nous combinons nature, art et sécurité dans chaque aire de jeux.",
   "presentation.feature1.title": "Bois de Robinier Naturel",
@@ -24,12 +21,10 @@
   "presentation.feature3.desc": "Nos structures respectent toutes les normes internationales de sécurité tout en offrant un jeu stimulant.",
   "presentation.feature4.title": "Bois de Robinier Naturel",
   "presentation.feature4.desc": "Nous utilisons le bois européen le plus durable, reconnu pour sa résistance naturelle et ses formes uniques.",
-
-  
-  
   "map.address": "18, rue du 14 juillet",
   "map.city": "93310 Le Pré-Saint-Gervais",
-  
+  "ourProducts.title": "Nos Produits",
+  "ourProducts.description": "Découvrez nos structures en bois uniques, conçues pour ramener la nature dans le jeu.",
   "products.title1": "Nos",
   "products.title2": "Univers de ",
   "products.title3": "Jeux",
@@ -42,7 +37,9 @@
   "products.climbing": "Structures d'escalade",
   "products.artistic": "Designs artistiques",
   "products.wood": "Structures en bois",
-  
+  "cta.title": "Prêt à créer votre aire de jeux de rêve ?",
+  "cta.description": "Contactez-nous dès aujourd'hui pour démarrer votre projet et ramener la nature dans le jeu.",
+  "cta.button": "Contactez-nous",
   "contact.title1": "Entrer en",
   "contact.title2": "Contact",
   "contact.intro": "Vous avez une idée en tête ? Construisons ensemble un projet unique.",
@@ -59,11 +56,10 @@
   "contact.message": "Message",
   "contact.placeholderMessage": "Parlez-nous de votre projet...",
   "contact.send": "Envoyer",
-  
   "about.title": "À propos de nous",
   "about.description": "Caracol, les jeux grandeur nature, est une société spécialisée dans :\n\nla commercialisation de gammes de jeux, d'équipements, de mobiliers et de stations de découverte destinés aux aires de jeux pour enfants ;\nla conception et la réalisation de projets d'aménagement d'aires de jeux pour enfants et d'espaces collectifs ;\nle souci constant de la prise en compte du respect environnemental et de l'application des normes de sécurité européennes.",
-  
-  
+  "inspiration.title": "Inspiration",
+  "inspiration.description": "Découvrez nos projets d'aires de jeux en bois de robinier, alliant nature, art et sécurité pour des espaces de jeux uniques et durables.",
   "footer.slogan1": "Karacol",
   "footer.slogan2": "Les jeux grandeur nature",
   "footer.quickLinks": "Liens rapides",

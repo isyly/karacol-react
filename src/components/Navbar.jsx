@@ -1,9 +1,11 @@
 
 import { useRef, useEffect } from "react";
 import { useTranslation } from 'react-i18next';
+
+import { NavLink } from 'react-router-dom';
 import KaracolLogo from '../assets/klogo.png';
 
-const Header = () => {
+const Navbar = () => {
     const menuToggleRef = useRef(null);
     const navigationRef = useRef(null);
 
@@ -46,20 +48,21 @@ const Header = () => {
     };
 
     return (
-        <header className="main-header">
+        <nav className="main-navbar ">
             <div className="container">
-                <div className="logo">
-                    <a href="index.html">
-                        <img src={KaracolLogo} alt="Kara Logo" />
-                    </a>
-                </div>
 
+                <div className="logo">
+                    <NavLink to="/">
+                        <img src={KaracolLogo} alt="Kara Logo" />
+                    </NavLink>
+                </div>
                 <nav className="navigation" ref={navigationRef}>
                     <ul>
-                        <li><a href="#products">{i18n.t('header.products')}</a></li>
-                        <li><a href="#presentation">{i18n.t('header.playgrounds')}</a></li>
-                        <li><a href="#about">{i18n.t('header.about')}</a></li>
-                        <li><a href="#contact">{i18n.t('header.contact')}</a></li>
+                        <li><NavLink to="/ourproducts">{i18n.t('navbar.products')}</NavLink></li>
+                        <li><NavLink to="/ourplayscapes">{i18n.t('navbar.playgrounds')}</NavLink></li>
+                        <li><NavLink to="/aboutus">{i18n.t('navbar.about')}</NavLink></li>
+                        <li><NavLink to="/inspiration">{i18n.t('navbar.inspiration')}</NavLink></li>
+                        <li><NavLink to="/contactus">{i18n.t('navbar.contact')}</NavLink></li>
                     </ul>
                 </nav>
                 <button className="menu-toggle" aria-label="Open menu" ref={menuToggleRef}>
@@ -67,7 +70,7 @@ const Header = () => {
                     <span className="bar"></span>
                     <span className="bar"></span>
                 </button>
-                <div className="header-utils">
+                <div className="navbar-utils">
                     <button
                         onClick={() => changeLanguage('en')}
                         className={currentLang === 'en' ? 'active' : ''}
@@ -83,8 +86,8 @@ const Header = () => {
                     >🇫🇷</button>
                 </div>
             </div>
-        </header>
+        </nav>
     );
 };
 
-export default Header;
+export default Navbar;

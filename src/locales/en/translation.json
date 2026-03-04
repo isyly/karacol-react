@@ -1,18 +1,16 @@
 {
   "topbar.contact": "Contact us by",
   "topbar.language": "or by phone at",
-
-  "header.products": "Our Products",
-  "header.playgrounds": "Our Playscapes",
-  "header.about": "About us",
-  "header.contact": "Contact",
-
+  "navbar.products": "Our Products",
+  "navbar.playgrounds": "Our Playscapes",
+  "navbar.about": "About us",
+  "navbar.contact": "Contact",
+  "navbar.inspiration": "Inspiration",
   "hero.title1": "Playground equipment",
   "hero.title2": "made of robinia wood",
   "hero.subtitle": "Individual, artistic, and natural play spaces for children of all ages.",
   "hero.products": "Our Products",
   "hero.inspiration": "Inspiration",
-
   "presentation.title": "Why choose",
   "presentation.intro": "We combine nature, art, and safety in every playground structure.",
   "presentation.feature1.title": "Natural Robinia Wood",
@@ -23,8 +21,8 @@
   "presentation.feature3.desc": "Our structures meet all international safety standards while providing challenging play.",
   "presentation.feature4.title": "Natural Robinia Wood",
   "presentation.feature4.desc": "We use the most durable European wood, known for its natural resistance and unique shapes.",
-
-
+  "ourProducts.title": "Our Products",
+  "ourProducts.description": "Discover our unique wooden structures, designed to bring nature back to play.",
   "products.title1": "Our",
   "products.title2": "Playground ",
   "products.title3": "Worlds",
@@ -37,10 +35,13 @@
   "products.climbing": "Climbing Structures",
   "products.artistic": "Artistic designs",
   "products.wood": "Wood Structures",
-
-    "map.address": "18, rue du 14 juillet",
+  "inspiration.title": "Inspiration",
+  "inspiration.description": "Discover our robinia wood playground projects, combining nature, art, and safety for unique and sustainable play spaces.",
+  "map.address": "18, rue du 14 juillet",
   "map.city": "93310 Le Pré-Saint-Gervais",
-
+  "cta.title": "Ready to create your dream playground?",
+  "cta.description": "Contact us today to start your project and bring nature back to play.",
+  "cta.button": "Contact Us",
   "contact.title1": "Get in",
   "contact.title2": "Touch",
   "contact.intro": "Do you have a idea in mind? Let's build something great together.",
@@ -57,10 +58,8 @@
   "contact.message": "Message",
   "contact.placeholderMessage": "Tell us about your project...",
   "contact.send": "Send Message",
-
   "about.title": "About Us",
   "about.description": "Caracol, les jeux grandeur nature, is a company specialized in: \n\n- The marketing of ranges of games, equipment, furniture, and discovery stations for children's playgrounds;\n- The design and realization of playground and collective space projects;\n- A constant concern for environmental respect and compliance with European safety standards.",
-  
   "footer.slogan1": "Playground equipment solutions for children.",
   "footer.slogan2": "We bring nature back to play.",
   "footer.quickLinks": "Quick Links",

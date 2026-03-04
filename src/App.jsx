@@ -1,32 +1,35 @@
+import { Routes, Route } from "react-router-dom";
 
 import TopBar from "./components/TopBar";
-import Header from "./components/Header";
-import Hero from "./components/Hero";
-import Presentation from "./components/Presentation";
-import AboutUs from "./components/AboutUs";
-import ScrollToTop from "./components/ScrollToTop";
-import Products from "./pages/Products";
-import RevealOnScroll from "./components/RevealOnScroll";
-import Contact from "./pages/Contact";
+import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import Home from "./routes/Home";
+import Inspiration from "./routes/Inspiration";
+import Contactus from "./routes/Contactus";
+import OurPlayscapes from "./routes/OurPlayscapes";
+import OurProducts from "./routes/OurProducts";
+import AboutUs from "./routes/AboutUs";
+import PageError from "./routes/PageError";
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
+    <>
       <TopBar />
-      <Header />
-      <Hero />
-      <AboutUs />
-      <Presentation />
-      <Products />
-      <RevealOnScroll>
-        <Contact />
-      </RevealOnScroll>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/inspiration" element={<Inspiration />} />
+        <Route path="/contactus" element={<Contactus />} />
+        <Route path="/ourplayscapes" element={<OurPlayscapes />} />
+        <Route path="/ourproducts" element={<OurProducts />} />
+        <Route path="/aboutus" element={<AboutUs />} />
+        <Route path="*" element={<PageError />} />
+      </Routes>
       <Footer />
-      <ScrollToTop />
-    </div>
+    </>
   );
+  
 }
 
 export default App;

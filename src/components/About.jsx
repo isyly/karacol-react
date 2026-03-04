@@ -9,7 +9,7 @@ import about4 from "../assets/about4.jpg";
 
 const images = [about1, about2, about3, about4];
 
-const AboutUs = () => {
+const About = () => {
   const { t } = useTranslation();
   const [current, setCurrent] = useState(0);
 
@@ -41,4 +41,4 @@ const AboutUs = () => {
   );
 };
 
-export default AboutUs;
+export default About;

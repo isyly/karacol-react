@@ -10,7 +10,7 @@ const Cta = () => {
 
       <h2>{t('cta.title')}</h2>
       <p>{t('cta.description')}</p>
-      <a href="/contact" className="btn btn-primary  ">{t('cta.button')}</a>
+      <a href="contactus" className="btn btn-primary  ">{t('cta.button')}</a>
         </div>
     </div>
   );

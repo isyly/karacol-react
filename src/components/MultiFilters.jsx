@@ -37,8 +37,8 @@ export default function MultiFilters() {
     const { t } = useTranslation();
 
   return (
-    <div>
-      <div className="buttons-container">
+  <div className="container"> 
+       <div className="buttons-container">
         {filters.map((category, idx) => (
           <button
             onClick={() => handleFilterButtonClick(category)}

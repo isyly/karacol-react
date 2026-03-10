@@ -9,9 +9,12 @@ const Inspiration = () => {
         <>
             <section className="inspiration">
                 <HeaderImage src={about4} alt="train train" />
-                <div className="container">
-                    <h1>{t('inspiration.title')}</h1>
-                    <p>{t('inspiration.description')}</p>
+                <div className="container-hero">
+                    <div className="hero-text">
+
+                        <h1>{t('inspiration.title')}</h1>
+                        <p>{t('inspiration.description')}</p>
+                    </div>
                 </div>
             </section>
         </>

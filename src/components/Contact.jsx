@@ -8,10 +8,9 @@ const Contact = () => {
     const { t } = useTranslation();
     return (
         <section className="contact-page" id="contact">
+
             <div className="container contact-wrapper">
                 <div className="contact-info ">
-                    <h2>{t('contact.title1', 'Get in')} <span>{t('contact.title2', 'Touch')}</span></h2>
-                    <p>{t('contact.intro', "Do you have a idea in mind? Let's build something great together.")}</p>
 
                     <div className="info-item">
                         <strong>{t('contact.address', 'Address')}:</strong>

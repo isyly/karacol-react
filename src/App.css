@@ -9,20 +9,29 @@ p {
 .buttons-container {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   margin-top: 20px;
 }
 .button {
-  border: 1px solid #000;
-  background: transparent;
-  margin: 5px 5px;
-  border-radius: 5px;
-  padding: 5px 10px;
+    padding: 12px 30px;
+    text-decoration: none;
   cursor: pointer;
-  transition: all 0.2s ease-in-out;
+      background-color: #719941;
+    color: #fff;
+    border: none;
+    font-family:"Quicksand", sans-serif;
+    /* padding: 12px 30px; */
+    font-weight: bold;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    display: inline-block;
+    margin-right: 15px;
+    margin-top: 50px;
+
 }
 
 .button:hover {
-  box-shadow: 3px 3px 0px 0px rgba(0, 0, 0);
+    background: #5a7a34;
 }
 
 .items-container {
@@ -52,8 +61,7 @@ p {
 
 .active {
     text-underline-offset: inherit;
-  background-color: #a5f543 ;
-  opacity: 0.5;
+  opacity: 1;
 }
 
 
@@ -223,10 +231,12 @@ h6 {
 
 .aboutus-container p {
     font-size: 1.18rem;
+    
     color: #333;
     line-height: 1.8;
     margin-bottom: 0;
     white-space: pre-line;
+    text-align: left;
 }
 
 @media (max-width: 768px) {
@@ -273,6 +283,29 @@ section[id] {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+}
+.container-hero {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    z-index: 2;
+    pointer-events: none;
+    padding-left: 5vw;
+}
+.container-hero .hero-text {
+    color: #000000;
+    background: rgba(255, 255, 255, 0.6);
+    text-align: left;
+    /* background: rgba(0,0,0,0.3); */
+    height: 30vh;
+    padding: 2rem 3rem;
+    pointer-events: auto;
+    border-radius: 5px;
 }
 
 
@@ -353,12 +386,21 @@ section[id] {
     font-size: 14px;
 }
 
-.navigation a:hover {
-    color: #4CAF50;
+.navigation li:hover {
+    color: #afac4c;
     /* Le vert typique de Karacol */
 }
+.navigation a.active {
+    color: #719941;
+    /* Le vert Karacol */
+    font-weight: bolder;
+    border-radius: 5px;
+}
+.navigation a.active:hover {
+    color: #cdcdcd;
+    /* Le vert typique de Karacol */
 
-
+}
 .hero {
     position: relative;
     height: 80vh;
@@ -385,6 +427,9 @@ section[id] {
 }
 
 .hero .container {
+    position: relative;
+    z-index: 2;
+
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -398,13 +443,51 @@ section[id] {
     height: 100%;
     display: flex;
     align-items: center;
+    
+}
+.parallax {
+  /* The image used */
+  background-image: url('img_parallax.jpg');
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.parallax {
+    position: relative;
+    height: 60vh;
+    overflow: hidden;
+}
+.parallax .header-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    /* Pour l'effet de défilement, l'image peut être positionnée en absolute si besoin */
 }
 
+/* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
+@media only screen and (max-device-width: 1366px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+}
+.hero-text {
+    position: relative;
+    margin-top: 10vh;
+    z-index: 2;
+    max-width: 600px;
+}
 .hero-text h1 {
     font-size: 3.5rem;
+    color: #719941;
     line-height: 1.1;
     margin-bottom: 20px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .hero-text h1 span {
@@ -427,6 +510,7 @@ section[id] {
     transition: all 0.3s ease;
     display: inline-block;
     margin-right: 15px;
+    border: none
 }
 
 .btn-primary {
@@ -639,7 +723,7 @@ section[id] {
 .product-image {
     position: relative;
     overflow: hidden;
-    height: 250px;
+    height: 230px;
 }
 
 .product-image img {
@@ -718,7 +802,12 @@ section[id] {
     gap: 40px;
     padding-bottom: 40px;
 }
+.social-icons{
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
 
+}
 .footer-col h4 {
     color: #719941;
     /* Rappel du vert */
@@ -833,11 +922,16 @@ section[id] {
     flex-wrap: wrap;
 }
 
-.navigation .nav-active {
-    color: #719941;
+.navigation .active {
+    color: #ffffff;
     /* Le vert Karacol */
     font-weight: bolder;
+    border-radius: 5px;
 }
+.navigation .active:hover {
+    color: #cdcdcd;
+    /* Le vert typique de Karacol */
+}   
 
 
 .contact-info,
@@ -890,9 +984,12 @@ textarea:focus {
     color: #999;
 }
 
-
-
-
+.header-image {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    margin-bottom: 40px;
+}
 
 /* --- STYLES SUPPLÉMENTAIRES POUR LES PAGES products-treehouses --- */
 

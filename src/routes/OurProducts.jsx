@@ -12,7 +12,7 @@ const OurProducts = () => {
             <section className="our-products">
                 <HeaderImage src={about2} alt="train train" />
 
-                <div className="container-hero">
+                <div className="container-hero container">
                     <div className="hero-text">
 
                         <h1>{t('ourProducts.title')}</h1>

@@ -26,7 +26,8 @@ const About = () => {
 
   return (
     <section className="aboutus-section" id="about">
-      <div className="aboutus-flex">
+
+      <div className="aboutus-flex container">
         <div className="aboutus-carousel">
           <button className="carousel-btn left" onClick={prevSlide}>&lt;</button>
           <img src={images[current]} alt={`about-slide-${current+1}`} className="carousel-img" />

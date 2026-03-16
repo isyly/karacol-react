@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import "../App.css";
+import { motion } from 'framer-motion';
 
 const Cta = () => {
       const { t } = useTranslation();
@@ -10,7 +11,9 @@ const Cta = () => {
 
       <h2>{t('cta.title')}</h2>
       <p>{t('cta.description')}</p>
-      <a href="contactus" className="btn btn-primary  ">{t('cta.button')}</a>
+      <motion.a href="contactus" className="btn btn-primary" whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
+        {t('cta.button')}
+      </motion.a>
         </div>
     </div>
   );

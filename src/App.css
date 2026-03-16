@@ -303,9 +303,9 @@ section[id] {
     text-align: left;
     /* background: rgba(0,0,0,0.3); */
     height: 30vh;
-    padding: 2rem 3rem;
+    padding: 1rem 1rem;
     pointer-events: auto;
-    border-radius: 5px;
+    border-radius: 0px 60px 0px 60px;
 }
 
 
@@ -445,6 +445,20 @@ section[id] {
     align-items: center;
     
 }
+.full-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;}
+
+.full-image img {
+    width: 100%;
+    max-height: 296px;
+    object-fit: cover;
+    /* Garde les proportions de l'image */
+    transition: transform 0.5s ease;
+    /* Animation fluide */
+}   
 .parallax {
   /* The image used */
   background-image: url('img_parallax.jpg');
@@ -865,7 +879,7 @@ section[id] {
     padding: 60px 0;
     text-align: center;
     display: flex;
-    margin: 50px 0px;
+    margin: 00px 0px;
 
 }
 

@@ -18,7 +18,7 @@ const Hero = () => {
                 <div className="container">
                     <div className="hero-text">
                         <h1>
-                            {t('hero.title1', 'Playground equipment')} <br />
+                            {t('hero.title1', 'Les jeux, Grandeur Nature')} <br />
                             <span>{t('hero.title2', 'made of robinia wood')}</span>
                         </h1>
                         <p>{t('hero.subtitle', 'Individual, artistic, and natural play spaces for children of all ages.')}</p>

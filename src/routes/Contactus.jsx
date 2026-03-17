@@ -9,7 +9,9 @@ function Contactus() {
   return (
 
     <div className="App">
-      <HeaderImage src={about1} alt="train train">
+      <HeaderImage src={about1} alt="train train" />
+        <div className="container">
+
         <div className="container-hero">
           <div className="hero-text">
             <h1>{t('contact.title1', 'Get in')} <span>{t('contact.title2', 'Touch')}</span></h1>
@@ -17,7 +19,7 @@ function Contactus() {
 
           </div>
         </div>
-      </HeaderImage>
+        </div>
       <Contact />
     </div>
   );

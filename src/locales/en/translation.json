@@ -37,8 +37,16 @@
   "products.wood": "Wood Structures",
   "ourPlayscapes.title": "Our Playscapes",
   "ourPlayscapes.description": "Discover our unique wooden structures, designed to bring nature back to play.",
+  "ourPlayscapes.sectionTitle": "Section Title",
+  "ourPlayscapes.sectionText": "Section Text",
+  "ourPlayscapes.sectionTitle2": "Section Title 2",
+  "ourPlayscapes.sectionText2": "Section Text 2",
+
   "aboutUs.title": "About Us",
   "aboutUs.description": "Caracol, les jeux grandeur nature,",
+  "aboutUs.title01": "Our History",
+  "aboutUs.description01": "Founded in 2005, Caracol started as a small family business specializing in the manufacture of wooden playgrounds. With a passion for nature and play, we quickly gained the trust of our clients through our artisanal expertise.",
+  
   "inspiration.title": "Inspiration",
   "inspiration.description": "Discover our robinia wood playground projects, combining nature, art, and safety for unique and sustainable play spaces.",
   "map.address": "18, rue du 14 juillet",

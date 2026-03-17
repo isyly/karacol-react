@@ -9,14 +9,19 @@ const OurProducts = () => {
     const { t } = useTranslation();
     return (
         <>
-            <section className="our-products">
+            <section className="our-products ">
                 <HeaderImage src={about2} alt="train train" />
+                <div className="container">
 
-                <div className="container-hero container">
-                    <div className="hero-text">
 
-                        <h1>{t('ourProducts.title')}</h1>
-                        <p>{t('ourProducts.description')}</p>
+
+
+                    <div className="container-hero">
+                        <div className="hero-text">
+
+                            <h1>{t('ourProducts.title')}</h1>
+                            <p>{t('ourProducts.description')}</p>
+                        </div>
                     </div>
                 </div>
                 <MultiFilters />

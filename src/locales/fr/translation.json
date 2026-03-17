@@ -23,6 +23,11 @@
   "presentation.feature4.desc": "Nous utilisons le bois européen le plus durable, reconnu pour sa résistance naturelle et ses formes uniques.",
   "ourPlayscapes.title": "Nos Aires de Jeux",
   "ourPlayscapes.description": "Découvrez nos structures en bois uniques, conçues pour ramener la nature dans le jeu.",
+  "ourPlayscapes.sectionTitle": "Titre de la section",
+  "ourPlayscapes.sectionText": "Texte de la section",
+  "ourPlayscapes.sectionTitle2": "Titre de la section 2",
+  "ourPlayscapes.sectionText2": "Texte de la section 2",
+
   "map.address": "18, rue du 14 juillet",
   "map.city": "93310 Le Pré-Saint-Gervais",
   "ourProducts.title": "Nos Produits",
@@ -62,6 +67,10 @@
   "aboutUs.description": "Caracol, les jeux grandeur nature,",
   "about.title": "À propos de nous",
   "about.description": "Caracol, les jeux grandeur nature, est une société spécialisée dans :\nla commercialisation de gammes de jeux, d'équipements, \nde mobiliers et de stations de découverte \ndestinés aux aires de jeux pour enfants ;\nla conception et la réalisation de projets d'aménagement d'aires de jeux pour enfants et d'espaces collectifs ;\nle souci constant de la prise en compte du respect environnemental et de l'application des normes de sécurité européennes.",
+  "aboutUs.title01": "Notre Histoire",
+  "aboutUs.description01": "Fondée en 2005, Caracol a débuté en tant que petite entreprise familiale spécialisée dans la fabrication de jeux en bois. Avec une passion pour la nature et le jeu, nous avons rapidement gagné la confiance de nos clients grâce à notre savoir-faire artisanal.",
+  
+  
   "inspiration.title": "Inspiration",
   "inspiration.description": "Découvrez nos projets d'aires de jeux en bois de robinier, alliant nature, art et sécurité pour des espaces de jeux uniques et durables.",
   "footer.slogan1": "Karacol",

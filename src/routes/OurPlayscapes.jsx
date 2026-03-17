@@ -3,6 +3,8 @@ import about4 from "../assets/about4.jpg";
 import HeaderImage from '../components/HeaderImage';
 import '../App.css';
 import Cta from '../components/Cta';
+import TextRightImageSection from '../components/TextRightImageSection';
+import TextLeftImageSection from '../components/TextLeftImageSection';
 
 const OurPlayscapes = () => {
     const { t } = useTranslation();
@@ -10,6 +12,8 @@ const OurPlayscapes = () => {
         <>
             <section className="our-playscapes">
                 <HeaderImage src={about4} alt="train train" />
+                <div className="container">
+
                 <div className="container-hero">
                     <div className="hero-text">
 
@@ -17,6 +21,26 @@ const OurPlayscapes = () => {
                         <p>{t('ourPlayscapes.description')}</p>
                     </div>
                 </div>
+                </div>
+                <TextRightImageSection
+                    title={t('ourPlayscapes.sectionTitle')}
+                    text={t('ourPlayscapes.sectionText')}
+                    imageSrc={about4}
+                    imageAlt="train train"
+                />
+                <TextLeftImageSection
+                    title={t('ourPlayscapes.sectionTitle2')}
+                    text={t('ourPlayscapes.sectionText2')}
+                    imageSrc={about4}
+                    imageAlt="train train"
+                />
+                                <TextRightImageSection
+                    title={t('ourPlayscapes.sectionTitle')}
+                    text={t('ourPlayscapes.sectionText')}
+                    imageSrc={about4}
+                    imageAlt="train train"
+                />
+
                 <Cta/>
             </section>
         </>
